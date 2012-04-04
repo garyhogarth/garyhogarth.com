@@ -1,0 +1,11 @@
+_welcome:
+    pattern:  /
+    defaults: { _controller: AoceuSiteBundle:Page:home }
+    
+AoceuSiteBundlePageAbout:
+    pattern:  /about
+    defaults: { _controller: AoceuSiteBundle:Page:about }
+    
+AoceuSiteBundlePageContact:
+    pattern:  /contact
+    defaults: { _controller: AoceuSiteBundle:Page:contact }

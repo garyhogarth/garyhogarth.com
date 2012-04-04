@@ -1,0 +1,7 @@
+parameters:
+#    aoceu_site.example.class: Aoceu\SiteBundle\Example
+
+services:
+#    aoceu_site.example:
+#        class: %aoceu_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

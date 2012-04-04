@@ -61,3 +61,31 @@
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.1
+
+[symfony-cmf]
+    git=http://github.com/symfony-cmf/symfony-cmf.git
+    git_command=submodule update --init --recursive
+
+;== Dependencies of the SymfonyCmfMenuBundle
+[knp-menu]
+    git=https://github.com/KnpLabs/KnpMenu.git
+
+[KnpMenuBundle]
+    git=http://github.com/KnpLabs/KnpMenuBundle.git
+    target=/bundles/Knp/Bundle/MenuBundle
+
+[SonatajQueryBundle]
+    git=http://github.com/sonata-project/SonatajQueryBundle.git
+    target=/bundles/Sonata/jQueryBundle
+
+[SonataAdminBundle]
+    git=https://github.com/sonata-project/SonataAdminBundle.git
+    target=/bundles/Sonata/AdminBundle
+
+[SonataDoctrinePHPCRAdminBundle]
+    git=https://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle.git
+    target=/bundles/Sonata/DoctrinePHPCRAdminBundle
+
+[TreeBundle]
+    git=http://github.com/symfony-cmf/TreeBundle.git
+    target=/bundles/Symfony/Cmf/Bundle/TreeBundle
