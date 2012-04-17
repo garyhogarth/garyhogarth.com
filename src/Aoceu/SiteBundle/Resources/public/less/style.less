@@ -1,30 +1,141 @@
+/* =============================================================
+   Google Web Fonts
+   ============================================================= */
+
+@import url("http://fonts.googleapis.com/css?family=Cabin");
+@import url("http://fonts.googleapis.com/css?family=Lobster");
+@import url("http://fonts.googleapis.com/css?family=PT+Sans");
+
 @import "bootstrap/bootstrap.less";
 
 body {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
-@import "bootstrap/responsive.less";
+/*@import "bootstrap/responsive.less";*/
 
 /* ===== Primary Styles ========================================================
    Author: Gary Hogarth
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
 
+/* =============================================================
+   General Styles
+   ============================================================= */
 .brand {
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-weight: normal
 }
+
+.no-border {
+    border-radius: 0px;
+    border:0px;
+}
+
+.transparent {
+    background:transparent;
+}
+
+footer {
+    background: @navbarBackground;
+    #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    .box-shadow(@shadow);
+    color:@grayPaler;
+}
+
+.footer-inner {
+    padding-top:10px;
+}
+
+.hero-unit h1 {
+    margin-bottom:.2em;
+}
+
+.hero-unit p {
+    padding:0px 15px;
+    font-size: 16px;
+}
+
+/* =============================================================
+   Pagination Styles
+   ============================================================= */
 
 .pagination.center {
   text-align: center;
 }
+
 .pagination ul {
   display: -moz-inline-box; /* FF2 or lower */
   display: inline-block;
   /* IE6/7 inline-block hack */
   *display: inline;
   *zoom: 1;
+}
+
+
+/* =============================================================
+   Custom Styles
+   ============================================================= */
+
+.feature-bar .hero-unit {
+    padding:60px 0px 30px;
+}
+
+.feature-bar h1 {
+    font-family: 'Lobster', @baseFontFamily;
+    font-weight: normal;
+}
+
+.feature-bar {
+    text-shadow: 1px 1px @grayPaler;
+}
+
+.bg-0 {
+    background: @grayDarker;
+    #gradient > .vertical(@grayDarker, @grayDark);
+    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    .box-shadow(@shadow);
+    color:@white;
+/*    border-bottom:1px solid @grayDarker;*/
+}
+
+.bg-1 h1 {
+    color:@white;
+    text-shadow: 2px 2px @grayDark;
+}
+
+.bg-1 {
+    background: @gray;
+    #gradient > .vertical(@gray, @grayMedium);
+    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    .box-shadow(@shadow);
+    color:@white;
+/*    border-bottom:1px solid @gray;*/
+    text-shadow: 1px 1px @grayDark;
+}
+
+.bg-2 {
+    background: @grayMedium;
+    #gradient > .vertical(@grayMedium, @grayMedium);
+    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    .box-shadow(@shadow);
+    color:@grayDark;
+/*    border-bottom:1px solid @grayLight;*/
+    padding:10px 0px;
+}
+
+.bg-3 {
+    background: @grayPaler;
+    #gradient > .vertical(@grayPaler, @grayLighter);
+    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    .box-shadow(@shadow);
+    color:@grayDark;
+    border-bottom:1px solid @grayPaler;
+}
+
+.bg-white {
+    background: @white;
 }
 

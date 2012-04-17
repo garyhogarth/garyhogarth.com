@@ -1,7 +1,9 @@
 _welcome:
     pattern:  /
     defaults: { _controller: AoceuSiteBundle:Page:home }
-    
+
+# Pages
+   
 AoceuSiteBundlePageAbout:
     pattern:  /about
     defaults: { _controller: AoceuSiteBundle:Page:about }
@@ -9,3 +11,9 @@ AoceuSiteBundlePageAbout:
 AoceuSiteBundlePageContact:
     pattern:  /contact
     defaults: { _controller: AoceuSiteBundle:Page:contact }
+    
+# Blog
+    
+AoceuSiteBundleBlog:
+    pattern:  /blog
+    defaults: { _controller: AoceuSiteBundle:Blog:main }
