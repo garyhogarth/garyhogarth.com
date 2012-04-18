@@ -1,7 +1,5 @@
 {% extends 'AoceuSiteBundle:layout:base.layout.html.twig' %}
 {% block body %}
-     
-
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -10,7 +8,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Gary Hogarth</a>
+          <!--<a class="brand" href="#">GaryHogarth.com</a>-->
+          <ul class="nav nav-pills">
+          <li class="dropdown" id="menu1">
+            <a class="brand dropdown-toggle" data-toggle="dropdown" href="#menu1">
+              GaryHogarth.com
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">GaryHogarth.com</a></li>
+              <li><a href="#">SociallyAcceptableGeek.com</a></li>
+              <li><a href="#">AOCEU.com</a></li>
+            </ul>
+          </li>
+        </ul>
           <div class="nav-collapse pull-right">
             {{ knp_menu_render('AoceuSiteBundle:Builder:mainMenu', {'currentClass': 'active','template' : 'AoceuSiteBundle:Partials:_main.menu.html.twig'}) }}
           </div><!--/.nav-collapse -->

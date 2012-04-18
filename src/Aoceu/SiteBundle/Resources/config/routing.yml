@@ -12,8 +12,12 @@ AoceuSiteBundlePageContact:
     pattern:  /contact
     defaults: { _controller: AoceuSiteBundle:Page:contact }
     
-# Blog
+# Portfolio
+AoceuSiteBundlePortfolio:
+    pattern:  /portfolio
+    defaults: { _controller: AoceuSiteBundle:Portfolio:main }
     
+# Blog   
 AoceuSiteBundleBlog:
     pattern:  /blog
     defaults: { _controller: AoceuSiteBundle:Blog:main }

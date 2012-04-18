@@ -4,13 +4,12 @@
 
 @import url("http://fonts.googleapis.com/css?family=Cabin");
 @import url("http://fonts.googleapis.com/css?family=Lobster");
-@import url("http://fonts.googleapis.com/css?family=PT+Sans");
 
 @import "bootstrap/bootstrap.less";
 
 body {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 /*@import "bootstrap/responsive.less";*/
@@ -23,9 +22,21 @@ body {
 /* =============================================================
    General Styles
    ============================================================= */
-.brand {
-    font-family: 'Lobster', cursive;
-    font-weight: normal
+a.brand {
+    font-family: 'Lobster', @baseFontFamily;
+    font-weight: normal;
+}
+
+.dropdown-menu {
+    background: @navbarBackground;
+    #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    .box-shadow(@shadow);
+    color:@grayPaler;
+}
+
+.dropdown-menu a {
+    color:@grayLighter;
 }
 
 .no-border {
@@ -53,11 +64,6 @@ footer {
     margin-bottom:.2em;
 }
 
-.hero-unit p {
-    padding:0px 15px;
-    font-size: 16px;
-}
-
 /* =============================================================
    Pagination Styles
    ============================================================= */
@@ -75,15 +81,28 @@ footer {
 }
 
 
+.align-right {
+    text-align:right;
+}
+.align-center {
+    text-align:center;
+}
+
 /* =============================================================
    Custom Styles
    ============================================================= */
 
-.feature-bar .hero-unit {
-    padding:60px 0px 30px;
+
+.feature-bar .hero-unit p {
+    padding:0px 5px;
+    font-size: 16px;
 }
 
-.feature-bar h1 {
+.feature-bar .hero-unit {
+    padding:45px 0px 5px;
+}
+
+h1,h2,h3 {
     font-family: 'Lobster', @baseFontFamily;
     font-weight: normal;
 }
@@ -92,50 +111,63 @@ footer {
     text-shadow: 1px 1px @grayPaler;
 }
 
-.bg-0 {
-    background: @grayDarker;
-    #gradient > .vertical(@grayDarker, @grayDark);
-    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
-    .box-shadow(@shadow);
-    color:@white;
-/*    border-bottom:1px solid @grayDarker;*/
-}
-
-.bg-1 h1 {
-    color:@white;
-    text-shadow: 2px 2px @grayDark;
-}
-
-.bg-1 {
+#whoami, #aboutme, #contactme {
     background: @gray;
     #gradient > .vertical(@gray, @grayMedium);
     @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
     .box-shadow(@shadow);
     color:@white;
-/*    border-bottom:1px solid @gray;*/
     text-shadow: 1px 1px @grayDark;
 }
 
-.bg-2 {
-    background: @grayMedium;
-    #gradient > .vertical(@grayMedium, @grayMedium);
-    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
-    .box-shadow(@shadow);
-    color:@grayDark;
-/*    border-bottom:1px solid @grayLight;*/
-    padding:10px 0px;
+#whoami h1, #aboutme h1, #contactme h1, #aboutme h3 {
+    color:@white;
+    text-shadow: 2px 2px @grayDark;
 }
 
-.bg-3 {
-    background: @grayPaler;
-    #gradient > .vertical(@grayPaler, @grayLighter);
+#image-marquee {
+    background: @grayDarker;
+    #gradient > .vertical(@grayDarker, @grayDark);
     @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
     .box-shadow(@shadow);
-    color:@grayDark;
-    border-bottom:1px solid @grayPaler;
+    color:@white;
+    padding:3px 0px;
 }
 
-.bg-white {
-    background: @white;
+#whatido .hero-unit {
+    padding-top:30px;
 }
+
+#testimonials {
+    background: @gray;
+    #gradient > .vertical(@gray, @grayMedium);
+    @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+    .box-shadow(@shadow);
+    color:@white;
+    text-shadow: 1px 1px @grayDark;
+    text-align:center;
+    padding:20px 0 0;
+}
+
+#testimonials h2 {
+    color:@white;
+}
+
+#testimonials a {
+    color:@white;
+}
+
+#musings {
+    padding:30px 0px;
+}
+
+#aboutme h3 {
+    margin-right:10px;
+    color:@white;
+}
+#moreme h3 {
+    margin-right:10px;
+    color:@black;
+}
+
 

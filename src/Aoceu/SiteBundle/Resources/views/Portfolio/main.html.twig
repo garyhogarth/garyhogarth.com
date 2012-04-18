@@ -1,0 +1,56 @@
+{% extends 'AoceuSiteBundle:layout:standard.layout.html.twig' %}
+
+{% block title %}{{ parent() }} - Freelance Web Developer/Consultant{% endblock %}
+
+{% block featuredContent %}
+    {% include 'AoceuSiteBundle:partials:_feature.portfolio.html.twig' %}
+{% endblock %}
+{% block content %}
+<div class="row">
+    <br/>
+    <ul class="thumbnails">
+        <li class="span6">
+            <a href="#" class="thumbnail">
+            <img src="http://placehold.it/520x360" alt="">
+                <h5>Company Name</h5>
+                <p>Overview short</p>
+            </a>
+        </li>
+        <li class="span2">
+            <a href="#" class="thumbnail">
+            <img src="http://placehold.it/260x180" alt="">
+                <h5>Company Name</h5>
+                <p>Overview short</p>
+            </a>
+        </li>
+        <li class="span2">
+            <a href="#" class="thumbnail">
+            <img src="http://placehold.it/260x180" alt="">
+                <h5>Company Name</h5>
+                <p>Overview short</p>
+            </a>
+        </li>
+        <li class="span2">
+            <a href="#" class="thumbnail">
+            <img src="http://placehold.it/260x180" alt="">
+                <h5>Company Name</h5>
+                <p>Overview short</p>
+            </a>
+        </li>
+        <li class="span3">
+            <a href="#" class="thumbnail">
+            <img src="http://placehold.it/260x180" alt="">
+                <h5>Company Name</h5>
+                <p>Overview short</p>
+            </a>
+        </li>
+        <li class="span3">
+            <a href="#" class="thumbnail">
+            <img src="http://placehold.it/260x180" alt="">
+                <h5>Company Name</h5>
+                <p>Overview short</p>
+            </a>
+        </li>
+    </ul>
+    </div>
+{% endblock %}

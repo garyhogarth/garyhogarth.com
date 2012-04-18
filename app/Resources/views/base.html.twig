@@ -14,19 +14,21 @@
 	<meta name="viewport" content="width=device-width">
     {% block stylesheets %}{% endblock %}
 
-	<script src="{{ asset('js/libs/modernizr-2.5.3-respond-1.1.0.min.js') }}"></script>
+	<script src="{{ asset('bundles/aoceusite/js/libs/modernizr-2.5.3-respond-1.1.0.min.js') }}"></script>
 </head>
 <body>
     <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
     {% block body %}{% endblock %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ asset('js/libs/jquery-1.7.1.min.js') }}"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="{{ asset('bundles/aoceusite/js/libs/jquery-1.7.1.min.js') }}"><\/script>')</script>
 
-    <script src="{{ asset('js/libs/bootstrap/transition.js') }}"></script>
-    <script src="{{ asset('js/libs/bootstrap/collapse.js') }}"></script>
+    <script src="{{ asset('bundles/aoceusite/js/libs/bootstrap/transition.js') }}"></script>
+    <script src="{{ asset('bundles/aoceusite/js/libs/bootstrap/collapse.js') }}"></script>
+    <script src="{{ asset('bundles/aoceusite/js/libs/bootstrap/carousel.js') }}"></script>
+    <script src="{{ asset('bundles/aoceusite/js/libs/bootstrap/dropdown.js') }}"></script>
 
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('bundles/aoceusite/js/script.js') }}"></script>
     
     {% block javascripts %}{% endblock %}
     <script>

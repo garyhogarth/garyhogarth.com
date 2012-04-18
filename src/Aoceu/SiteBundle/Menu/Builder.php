@@ -22,6 +22,7 @@ class Builder extends ContainerAware
 
         $menu->addChild('Home', array('route' => '_welcome'));
         $menu->addChild('Blog', array('route' => 'AoceuSiteBundleBlog'));
+        $menu->addChild('Portfolio', array('route' => 'AoceuSiteBundlePortfolio'));
         $menu->addChild('About', array('route' => 'AoceuSiteBundlePageAbout'));
         $menu->addChild('Contact', array('route' => 'AoceuSiteBundlePageContact'));
 

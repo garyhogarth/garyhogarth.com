@@ -1,9 +1,10 @@
 {% extends 'AoceuSiteBundle:layout:standard.layout.html.twig' %}
 
-{% block title %}{{ parent() }} - About{% endblock %}
+{% block title %}{{ parent() }} - Get In Contact{% endblock %}
 
+{% block featuredContent %}
+    {% include 'AoceuSiteBundle:partials:_feature.contactme.html.twig' %}
+{% endblock %}
 {% block content %}
-    <div class="hero-unit">
-        <h1>Contact Me</h1>
-    </div>
+    <h1>Enquiries Form</h1>
 {% endblock %}

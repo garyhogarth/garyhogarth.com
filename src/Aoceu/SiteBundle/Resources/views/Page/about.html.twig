@@ -1,13 +1,9 @@
 {% extends 'AoceuSiteBundle:layout:standard.layout.html.twig' %}
 
-{% block title %}{{ parent() }} - About{% endblock %}
+{% block title %}{{ parent() }} - Get to know me a little better{% endblock %}
 
-{% block content %}
-    <div class="hero-unit">
-        <h1>About</h1>
-        <p>From experience in both start-ups and large corporations I have been required to not only think <em>How can we do this?</em> but <em>Why should we do this?</em> or <em>Can we make this better?</em>.</p>
-        <p>Search Engine Optimisation (SEO) and accessibility standards.
-        <p>I am available for freelance work, why not check out my portfolio, and if you like what you see feel free to contact me.</p>
-        <p>Want to know more check out my about me page or check out my online CV</p>
-    </div>
+{% block featuredContent %}
+    {% include 'AoceuSiteBundle:partials:_feature.aboutme.html.twig' %}
+    {% include 'AoceuSiteBundle:partials:_feature.image.marquee.html.twig' %}
+    {% include 'AoceuSiteBundle:partials:_feature.moreme.html.twig' %}
 {% endblock %}

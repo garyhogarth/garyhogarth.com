@@ -1,52 +1,11 @@
 {% extends 'AoceuSiteBundle:layout:standard.layout.html.twig' %}
 
-{% block title %}{{ parent() }} - Homepage{% endblock %}
+{% block title %}{{ parent() }} - Freelance Web Developer/Consultant{% endblock %}
 
 {% block featuredContent %}
-    <div class="feature-bar bg-1">
-        <div class="container">
-            <div class="hero-unit no-border transparent">
-                <div class="row">
-                    <div class="span4">
-                        <h1>Who am I ?</h1>
-                    </div>
-                    <div class="span8">
-                        <p>I'm a UK-based web developer &amp; consultant with a passion for working with start ups and large organisations alike.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="feature-bar bg-2" style="width:100%;overflow:hidden;">
-        <div style="max-height:80px;width:1560px;overflow:hidden;">
-            <img src="http://placehold.it/160x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/160x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/160x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/160x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/160x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-            <img src="http://placehold.it/160x80" alt="">
-            <img src="http://placehold.it/80x80" alt="">
-        </div>
-    </div>
-    <div class="feature-bar">
-        <div class="container">
-            <div class="hero-unit no-border transparent">
-                <h1>What can I do ?</h1>
-                <p>An expert object orientated <strong>PHP5</strong> developer, with experience using a range of PHP frameworks including <strong>Symfony2</strong>, <strong>Zend</strong> and <strong>Yii</strong>.</p>
-                <p>With extensive <strong>MySQL</strong> and <strong>postgresSQL</strong> exposure both natively and with ORMs such as <strong>Doctrine2</strong></p>
-                <p>Strong front end knowledge including heavy use of <strong>HTML5</strong> with <strong>CSS3</strong> and <strong>LESS</strong> and experience both writing raw <strong>JavaScript</strong> and using the <strong>jQuery</strong> libraries.</p>
-            </div>
-        </div>
-    </div>
-{% endblock %}
-{% block content %}
+    {% include 'AoceuSiteBundle:partials:_feature.whoami.html.twig' %}
+    {% include 'AoceuSiteBundle:partials:_feature.image.marquee.html.twig' %}
+    {% include 'AoceuSiteBundle:partials:_feature.whatido.html.twig' %}
+    {% include 'AoceuSiteBundle:partials:_feature.testimonials.html.twig' %}
+    {% include 'AoceuSiteBundle:partials:_feature.musings.html.twig' %}
 {% endblock %}
