@@ -89,3 +89,4 @@
 [TreeBundle]
     git=http://github.com/symfony-cmf/TreeBundle.git
     target=/bundles/Symfony/Cmf/Bundle/TreeBundle
+
