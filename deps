@@ -90,3 +90,11 @@
     git=http://github.com/symfony-cmf/TreeBundle.git
     target=/bundles/Symfony/Cmf/Bundle/TreeBundle
 
+[FOSFacebookBundle]
+    git=git://github.com/FriendsOfSymfony/FOSFacebookBundle.git
+    target=/bundles/FOS/FacebookBundle
+    version=origin/master
+
+[FacebookSDK]
+    git=git://github.com/facebook/facebook-php-sdk.git
+    target=/facebook
