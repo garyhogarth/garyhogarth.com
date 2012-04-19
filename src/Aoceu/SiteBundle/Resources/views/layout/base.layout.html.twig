@@ -2,8 +2,11 @@
 {% block stylesheets %}
     {{ parent() }}
 
-	<link rel="stylesheet/less" href="{{ asset('bundles/aoceusite/less/style.less') }}">
-	<script src="{{ asset('bundles/aoceusite/js/libs/less-1.2.1.min.js') }}"></script>
+	<!--<link rel="stylesheet/less" href="{{ asset('bundles/aoceusite/less/style.less') }}">
+	<script src="{{ asset('bundles/aoceusite/js/libs/less-1.2.1.min.js') }}"></script>-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/aoceusite/css/style.css') }}">
+
 	
 	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
 	to style.css, and replace the 2 lines above by this one:
