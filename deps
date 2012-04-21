@@ -68,7 +68,7 @@
 
 ;== Dependencies of the SymfonyCmfMenuBundle
 [knp-menu]
-    git=https://github.com/KnpLabs/KnpMenu.git
+    git=http://github.com/KnpLabs/KnpMenu.git
 
 [KnpMenuBundle]
     git=http://github.com/KnpLabs/KnpMenuBundle.git
@@ -79,11 +79,11 @@
     target=/bundles/Sonata/jQueryBundle
 
 [SonataAdminBundle]
-    git=https://github.com/sonata-project/SonataAdminBundle.git
+    git=http://github.com/sonata-project/SonataAdminBundle.git
     target=/bundles/Sonata/AdminBundle
 
 [SonataDoctrinePHPCRAdminBundle]
-    git=https://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle.git
+    git=http://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle.git
     target=/bundles/Sonata/DoctrinePHPCRAdminBundle
 
 [TreeBundle]
