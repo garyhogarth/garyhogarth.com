@@ -81,11 +81,61 @@
 [SonataAdminBundle]
     git=http://github.com/sonata-project/SonataAdminBundle.git
     target=/bundles/Sonata/AdminBundle
+    version=origin/2.0
+
+[SonataDoctrineORMAdminBundle]
+    git=http://github.com/sonata-project/SonataDoctrineORMAdminBundle.git
+    target=/bundles/Sonata/DoctrineORMAdminBundle
+    version=origin/2.0
 
 [SonataDoctrinePHPCRAdminBundle]
     git=http://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle.git
     target=/bundles/Sonata/DoctrinePHPCRAdminBundle
+    version=origin/2.0
+
+[SonataBlockBundle]
+    git=http://github.com/sonata-project/SonataBlockBundle.git
+    target=/bundles/Sonata/BlockBundle
+    version=origin/2.0
+
+[SonataCacheBundle]
+    git=http://github.com/sonata-project/SonataCacheBundle.git
+    target=/bundles/Sonata/CacheBundle
+    version=origin/2.0
+
+[Exporter]
+    git=http://github.com/sonata-project/exporter.git
+    target=/exporter
 
 [TreeBundle]
     git=http://github.com/symfony-cmf/TreeBundle.git
     target=/bundles/Symfony/Cmf/Bundle/TreeBundle
+
+[Imagine]
+    git=http://github.com/avalanche123/Imagine.git
+    target=imagine
+
+[AvalancheImagineBundle]
+    git=http://github.com/avalanche123/AvalancheImagineBundle.git
+    target=bundles/Avalanche/Bundle/ImagineBundle
+
+[FOSUserBundle]
+    git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
+    target=bundles/FOS/UserBundle
+    version=1.2.0
+
+[doctrine-fixtures]
+    git=http://github.com/doctrine/data-fixtures.git
+
+[DoctrineFixturesBundle]
+    git=http://github.com/symfony/DoctrineFixturesBundle.git
+    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
+
+[SonataUserBundle]
+    git=http://github.com/sonata-project/SonataUserBundle.git
+    target=/bundles/Sonata/UserBundle
+    version=origin/2.0
+ 
+[SonataEasyExtendsBundle]
+    git=http://github.com/sonata-project/SonataEasyExtendsBundle.git
+    target=/bundles/Sonata/EasyExtendsBundle
